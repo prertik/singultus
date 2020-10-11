@@ -35,6 +35,7 @@ ClojureScript implementation of the awesome [Hiccup](https://github.com/weavejes
 ## License
 
 Copyright (C) 2011 Chris Granger
+
 Copyright (C) 2020 Pratik Karki
 
 Distributed under the Eclipse Public License, the same as Clojure.
