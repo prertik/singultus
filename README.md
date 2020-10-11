@@ -1,6 +1,6 @@
-# crate
+# singultus
 
-Crate is a ClojureScript implementation of the awesome [Hiccup](https://github.com/weavejester/hiccup/) html templating library.
+Singultus is a fork of [crate](https://github.com/ibdknox/crate) which is ClojureScript implementation of the awesome [Hiccup](https://github.com/weavejester/hiccup/) html templating library.
 
 ## Usage
 
