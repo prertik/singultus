@@ -8,7 +8,7 @@ ClojureScript implementation of the awesome [Hiccup](https://github.com/weavejes
 ```clojure
 (ns myapp
  (:use-macros [singultus.def-macros :only [defpartial]])
- (:require [singultus.core :as crate]))
+ (:require [singultus.core :as singultus]))
 
 (singultus/html [:p.woot {:id "blah"} "Hey!"])
 => <p class="woot" id="blah">Hey!</p>
