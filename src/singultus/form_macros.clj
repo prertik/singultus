@@ -1,4 +1,4 @@
-(ns crate.form-macros)
+(ns singultus.form-macros)
 
 (defmacro with-group
   "Group together a set of related form fields for use with the Ring

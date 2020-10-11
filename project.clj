@@ -1,2 +1,2 @@
-(defproject crate "0.2.4"
-  :description "A ClojureScript implementation of Hiccup")
+(defproject singultus "1.0.0"
+  :description "A fork of crate (with modern changes) which is ClojureScript implementation of Hiccup")

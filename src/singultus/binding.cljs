@@ -1,4 +1,5 @@
-(ns crate.binding (:require [clojure.set :as set]))
+(ns singultus.binding
+  (:require [clojure.set :as set]))
 
 ;;*********************************************************
 ;; subatom

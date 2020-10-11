@@ -1,6 +1,6 @@
-(ns crate.core-test
+(ns singultus.core-test
   (:use clojure.test
-        crate.core))
+        singultus.core))
 
 (deftest a-test
   (testing "FIXME, I fail."

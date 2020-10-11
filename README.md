@@ -1,15 +1,16 @@
 # singultus
 
-Singultus is a fork of [crate](https://github.com/ibdknox/crate) which is ClojureScript implementation of the awesome [Hiccup](https://github.com/weavejester/hiccup/) html templating library.
+Singultus is a fork of [crate](https://github.com/ibdknox/crate) which is
+ClojureScript implementation of the awesome [Hiccup](https://github.com/weavejester/hiccup/) html templating library.
 
 ## Usage
 
 ```clojure
 (ns myapp
- (:use-macros [crate.def-macros :only [defpartial]])
- (:require [crate.core :as crate]))
+ (:use-macros [singultus.def-macros :only [defpartial]])
+ (:require [singultus.core :as crate]))
 
-(crate/html [:p.woot {:id "blah"} "Hey!"])
+(singultus/html [:p.woot {:id "blah"} "Hey!"])
 => <p class="woot" id="blah">Hey!</p>
 
 (defpartial header []
@@ -23,16 +24,17 @@ Singultus is a fork of [crate](https://github.com/ibdknox/crate) which is Clojur
 
 ## Differences from Hiccup
 
-* The crate.core/html returns dom nodes instead of strings of html
+* The singultus.core/html returns dom nodes instead of strings of html
 * You can use dom nodes in element bodies like this:
 
 ```clojure
-(crate/html [:div (crate/raw "<span>foo</span><strong>bar</strong>")])
+(singultus/html [:div (crate/raw "<span>foo</span><strong>bar</strong>")])
 => <div><span>foo</span><strong>bar</strong></div>
 ```
 
 ## License
 
 Copyright (C) 2011 Chris Granger
+Copyright (C) 2020 Pratik Karki
 
 Distributed under the Eclipse Public License, the same as Clojure.

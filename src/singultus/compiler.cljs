@@ -1,8 +1,8 @@
-(ns crate.compiler
+(ns singultus.compiler
   (:require [goog.dom :as gdom]
             [goog.style :as gstyle]
             [clojure.string :as string]
-            [crate.binding :as bind]))
+            [singultus.binding :as bind]))
 
 (def xmlns {:xhtml "http://www.w3.org/1999/xhtml"
             :svg "http://www.w3.org/2000/svg"})
@@ -30,7 +30,7 @@
 (defn as-content [parent content]
   (doseq[c content]
     (let [child (cond
-                 	(satisfies? Element c) (-elem c)
+                  (satisfies? Element c) (-elem c)
                   (nil? c) nil
                   (map? c) (throw "Maps cannot be used as content")
                   (string? c) (gdom/createTextNode c)

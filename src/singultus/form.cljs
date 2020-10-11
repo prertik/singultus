@@ -1,8 +1,7 @@
-(ns crate.form
-  (:use [crate.util :only [escape-html to-uri as-str]])
-  (:use-macros [crate.def-macros :only [defelem]])
-  ; Must require crate.compiler for defelem to work.
-  (:require [crate.compiler :as compiler]))
+(ns singultus.form
+  (:use [singultus.util :only [escape-html to-uri as-str]])
+  (:use-macros [singultus.def-macros :only [defelem]])
+  (:require [singultus.compiler :as compiler]))
 
 (def ^:dynamic *group* [])
 

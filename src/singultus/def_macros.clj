@@ -1,4 +1,4 @@
-(ns crate.def-macros)
+(ns singultus.def-macros)
 
 (defmacro defpartial
   [name params & body]

@@ -1,5 +1,5 @@
-(ns crate.page
-  (:use [crate.util :only [to-uri]]))
+(ns singultus.page
+  (:use [singultus.util :only [to-uri]]))
 
 (defn include-js
   "Include a list of external javascript files."

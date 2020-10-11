@@ -1,4 +1,4 @@
-(ns crate.util
+(ns singultus.util
   (:require [clojure.string :as str]))
 
 (def ^:dynamic *base-url* nil)

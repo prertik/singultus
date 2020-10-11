@@ -1,9 +1,8 @@
-(ns crate.element
-  (:use [crate.util :only [to-uri]])
-  (:use-macros [crate.def-macros :only [defelem]])
+(ns singultus.element
+  (:use [singultus.util :only [to-uri]])
+  (:use-macros [singultus.def-macros :only [defelem]])
   (:require
-    ; Must require crate.compiler for defelem to work.
-    [crate.compiler :as compiler]
+    [singultus.compiler :as compiler]
     [clojure.string :as str]))
 
 (defn javascript-tag
