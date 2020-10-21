@@ -14,5 +14,5 @@
       res
       (first res))))
 
-(def ^ {:doc "Alias for crate.util/escape-html"}
+(def ^ {:doc "Alias for singultus.util/escape-html"}
   h util/escape-html)

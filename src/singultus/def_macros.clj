@@ -2,19 +2,19 @@
 
 (defmacro defpartial
   [name params & body]
-  `(let [group# (swap! crate.core/group-id inc)]
-     (defn ^{:crateGroup group#}
+  `(let [group# (swap! singultus.core/group-id inc)]
+     (defn ^{:singultusGroup group#}
        ~name ~params
-       (let [elem# (crate.core/html ~@body)]
-         (.setAttribute elem# "crateGroup" group#)
+       (let [elem# (singultus.core/html ~@body)]
+         (.setAttribute elem# "singultusGroup" group#)
          elem#))
-     (set! (.-prototype._crateGroup ~name) group#)))
+     (set! (.-prototype._singultusGroup ~name) group#)))
 
 (defmacro defhtml
   [name params & body]
-  `(let [group# (swap! crate.core/group-id inc)]
+  `(let [group# (swap! singultus.core/group-id inc)]
      (defn ~name ~params
-       (crate.core/html ~@body))))
+       (singultus.core/html ~@body))))
 
 (defmacro defelem
   "Defines a function that will return a tag vector. If the first argument
@@ -24,4 +24,4 @@
   `(do
     (declare ~name)
     (let [func# (fn ~@fdecl)]
-      (def ~name (crate.compiler/add-optional-attrs func#)))))
+      (def ~name (singultus.compiler/add-optional-attrs func#)))))
